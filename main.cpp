@@ -12,32 +12,23 @@ cout<<"[2] Enter the data of the array... \n";
 for(i=0;i<=n;i++){
 cin>>a[i];
 if(a[i]>l){
-l=a[i];
-}
-}
+l=a[i];}}
 cout<<"[3] The array is. ";
 for(i=0;i<=n;i++){
-cout<<a[i]<<",";
-}
+cout<<a[i]<<",";}
 cout<<"\n [4] Now we will proceed with arrangingthe array items in descending order. \n";
 delay(1000);
 for(i=0;i<=n && l!=a[0];i++){
 j++;
 if(j==n+1 && l!=a[0]){
 i=0;
-j=1;
-}
+j=1;}
 if(a[j]>a[i]){
 x=a[i];
 a[i]=a[j];
 a[j]=x; 
-}
-if(j==n && l!=a[0]){
-i=0;
 }}
 cout<<"\n [5] The arranged array is \n";
 for(i=0;i<=n;i++){
-cout<<a[i]<<",";
-}
-delay(5000);
-}
+cout<<a[i]<<",";}
+delay(5000);}
